@@ -18,6 +18,7 @@ module "vpc" {
   }
 }
 
+
 resource "aws_security_group" "lb-sg" {
     name = "app-lb-sg"
     vpc_id = module.vpc.vpc_id
